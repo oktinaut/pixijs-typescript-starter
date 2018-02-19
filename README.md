@@ -1,4 +1,4 @@
-# BABYLON.js Typescript Starter
+# PixiJS Typescript Starter
 
 This Repository contains a sample PixiJS application.
 
