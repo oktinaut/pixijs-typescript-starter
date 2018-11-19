@@ -2,6 +2,7 @@ const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
+    mode: "development",
     devtool: "inline-source-map",
     entry: "./src/index.ts",
     output: {
@@ -22,8 +23,10 @@ module.exports = {
             { from: "public" },
         ]),
     ],
-    externals: {
-        "pixi.js": "PIXI",
+    optimization: {
+        splitChunks: {
+            chunks: "all",
+        },
     },
     devServer: {
         contentBase: path.resolve(__dirname, "./dist"),

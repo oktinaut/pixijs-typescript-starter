@@ -1,3 +1,4 @@
+
 declare module "*.glsl" {
     const shader: string;
 

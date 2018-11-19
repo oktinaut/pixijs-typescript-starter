@@ -1,19 +1,21 @@
 import * as PIXI from "pixi.js";
 import * as gsap from "gsap";
+
 const { TweenMax } = gsap;
 
-import { SampleFilter } from "./filters/sample-filter";
+import { SampleFilter } from "./Filters/Sample/SampleFilter";
 
 const width = 900;
 const height = 600;
 
-const app = new PIXI.Application({ 
-    width: width, 
-    height: height, 
-    antialias: true, 
+const app = new PIXI.Application({
+    width: width,
+    height: height,
+    antialias: true,
 });
 
-document.body.appendChild(app.view);
+const appContainer = document.getElementById("app_container")
+appContainer.appendChild(app.view);
 
 function loadAssets() {
 
@@ -38,7 +40,7 @@ function run() {
 
     TweenMax.to(sprite, 2.0, { rotation: Math.PI * 2, ease: gsap.Linear.easeNone })
         .repeat(-1);
-    
+
     app.stage.addChild(sprite);
 }
 
