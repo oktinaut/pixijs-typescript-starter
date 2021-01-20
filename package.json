@@ -22,7 +22,7 @@
     "webpack-glsl-loader": "^1.0.1"
   },
   "dependencies": {
-    "gsap": "^2.0.2",
+    "gsap": "^3.6.0",
     "pixi.js": "^4.8.2"
   }
 }
