@@ -18,7 +18,7 @@
     "typescript": "^3.1.6",
     "webpack": "^4.26.0",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.7.2",
+    "webpack-dev-server": "^3.11.3",
     "webpack-glsl-loader": "^1.0.1"
   },
   "dependencies": {
